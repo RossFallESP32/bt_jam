@@ -158,8 +158,14 @@ void loop() {
 
   if (state == HIGH)
     two();
+u8x8.setFont(u8x8_font_chroma48medium8_r);
+u8x8.drawString(0,3," Chanal   Mode ");
+u8x8.refreshDisplay();
 
   else {
     one();
+u8x8.setFont(u8x8_font_chroma48medium8_r);
+u8x8.drawString(0,3," Randon   Mode ");
+u8x8.refreshDisplay();
   }
 }
